@@ -243,6 +243,9 @@ class Telescope(object):
 
                 ''' Fragment is ambiguous if multiple mappings'''
                 _mapped = [a for a in alns if not a.is_unmapped]
+                if not _mapped:
+                    print('Not reads were mapped in this fragment, skipping ...')
+                    continue
                 _ambig = len(_mapped) > 1
 
                 ''' Update min and max scores '''
