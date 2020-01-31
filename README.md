@@ -47,7 +47,7 @@ conda create -n telescope_env python=3.6 future pyyaml cython=0.29.7 \
   numpy=1.16.3 scipy=1.2.1 pysam=0.15.2 htslib=1.9 intervaltree=3.0.2
 
 conda activate telescope_env
-pip install git+git://github.com/mlbendall/telescope.git
+pip install git+git://github.com/froy0212/telescope
 telescope assign -h
 ```
 
